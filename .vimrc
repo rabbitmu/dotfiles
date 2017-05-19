@@ -55,11 +55,19 @@ set hls
 "                                        Keymap                                "
 "=============================================================================="
 "====begin(通用 Keymap)===="
-let mapleader=','  
-let g:mapleader=','
+let mapleader=';'  
+let g:mapleader=';'
+
+map <leader>w :w <CR>
+" 保存
+
+map <leader>bn :bn <CR>
+" 切换下一个buffer
+map <leader>bp :bp <CR>
+" 切换上一个buffer
 
 map <leader>m :!open http://man.bmbstack.com/vim
-map <leader>w :!open https://wakatime.com/dashboard
+" map <leader>w :!open https://wakatime.com/dashboard
 "打开man手册
 inoremap jj <esc> 
 " ESC
