@@ -157,9 +157,6 @@ Plug 'SirVer/ultisnips' "Track the engine
 Plug 'honza/vim-snippets' "代码片段
 Plug 'Shougo/unite.vim' "find files, buffers, MRU
 Plug 'mkitt/tabline.vim' "Tab line
-Plug 'klen/python-mode' "Python mode
-Plug 'nvie/vim-flake8' "Python代码规范利器
-Plug 'davidhalter/jedi-vim' "Python代码补全
 Plug 'othree/html5.vim' "html5代码补全
 Plug 'plasticboy/vim-markdown' "markdown syntax
 Plug 'groenewege/vim-less' "less syntax
@@ -169,11 +166,8 @@ Plug 'Shougo/unite-outline'
 Plug 'Shougo/neocomplete'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
-Plug 'fatih/vim-go' "golang开发套件
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/vim-xmark'
-Plug 'shawncplus/phpcomplete.vim'
-Plug 'stanangeloff/php.vim'
 Plug 'rking/ag.vim' "超级ag搜索
 Plug 'JulesWang/css.vim'
 Plug 'cakebaker/scss-syntax.vim'"
@@ -182,9 +176,7 @@ Plug 'Konfekt/FastFold'
 Plug 'mhinz/vim-startify'
 Plug 'hoaproject/Contributions-Vim-Pp'
 Plug 'jiangmiao/auto-pairs'
-Plug 'artur-shaik/vim-javacomplete2' " Java 自动完成
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  } "FZF文件搜索
-Plug 'wakatime/vim-wakatime'
 Plug 'chemzqm/wxapp.vim' " 微信小程序补全插件
 Plug 'chemzqm/unite-js-func'  " 文件内函数跳转
 
