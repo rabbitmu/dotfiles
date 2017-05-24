@@ -66,6 +66,10 @@ map <leader>bn :bn <CR>
 map <leader>bp :bp <CR>
 " 切换上一个buffer
 
+nmap <leader> lb $
+nmap <leader> le 0
+" 跳到行首和行尾
+
 map <leader>m :!open http://man.bmbstack.com/vim
 " map <leader>w :!open https://wakatime.com/dashboard
 "打开man手册
