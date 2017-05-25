@@ -142,7 +142,7 @@ Plug 'majutsushi/tagbar' "显示tagbar目录
 Plug 'pangloss/vim-javascript' "js缩进语法支持
 Plug 'mxw/vim-jsx' " jsx 语法高亮
 " ES2015 code snippets (Optional)
-Plug 'epilande/vim-es2015-snippets'
+"Plug 'epilande/vim-es2015-snippets'
 " React code snippets
 Plug 'epilande/vim-react-snippets'
 " Trigger configuration (Optional)  let g:UltiSnipsExpandTrigger="<C-l>"
@@ -183,6 +183,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  } "FZF文件搜索
 Plug 'chemzqm/wxapp.vim' " 微信小程序补全插件
 Plug 'chemzqm/unite-js-func'  " 文件内函数跳转
+Plug 'tpope/vim-haml' " html补全
+Plug 'hail2u/vim-css3-syntax'
+Plug 'ternjs/tern_for_vim' " js补全
+Plug 'Valloric/MatchTagsAlways' " 标签提示
 
 call plug#end()
 
@@ -198,6 +202,11 @@ colorscheme hybrid_reverse
 "=============================================================================="
 "                            Plugin configuration                              "
 "=============================================================================="
+
+"------------------------------------------------------------------------------
+" emmet
+"------------------------------------------------------------------------------
+:imap <C-d> <C-y>,
 
 "------------------------------------------------------------------------------
 " NERDTree
