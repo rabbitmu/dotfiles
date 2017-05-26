@@ -187,6 +187,9 @@ Plug 'tpope/vim-haml' " html补全
 Plug 'hail2u/vim-css3-syntax'
 Plug 'ternjs/tern_for_vim' " js补全
 Plug 'Valloric/MatchTagsAlways' " 标签提示
+Plug 'vitalk/vim-simple-todo' " 修改todo状态
+" vimwiki无法使用plug安装，需手动创建
+
 
 call plug#end()
 
