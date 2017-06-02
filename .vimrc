@@ -31,9 +31,7 @@ set completeopt=longest,menuone
 set nobackup " 覆盖文件时不备份
 set noswapfile
 set sessionoptions=blank,buffers,curdir,folds,help,options,winsize,tabpages
-if has('mouse') "鼠标支持
-    set mouse=a
-endif
+set mouse-=a " 禁用鼠标
 
 "=======代码折叠======"
 set foldmethod=syntax  "set foldmethod=indent 基于缩进或语法进行代码折叠
@@ -49,6 +47,10 @@ set t_Co=256 " 使用256配色
 set backspace=2 
 set nowrap  "禁止折行
 set hls
+" 高亮TODO, FIXME
+if has('autocmd')
+    autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|XXX\|BUG\|HACK\)')
+endif
 
 
 "=============================================================================="
@@ -66,9 +68,15 @@ map <leader>bn :bn <CR>
 map <leader>bp :bp <CR>
 " 切换上一个buffer
 
-nmap <leader> lb $
-nmap <leader> le 0
+noremap L $
+noremap H 0
 " 跳到行首和行尾
+
+noremap <silent><leader>/ :nohls<CR>
+" 关闭上次的搜索高亮
+
+vnoremap <leader>y "+y
+" 复制选区内容到系统剪贴板
 
 map <leader>m :!open http://man.bmbstack.com/vim
 " map <leader>w :!open https://wakatime.com/dashboard
