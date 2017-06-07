@@ -120,6 +120,16 @@ nmap <s-h>= :vertical resize +5<CR>
 " 垂直方向放大window
 nmap <s-h>- :vertical resize -5<CR> 
 " 垂直方向缩小window
+
+" 切换相对/绝对行号
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber number
+  else
+    set relativenumber
+  endif
+endfunc
+nnoremap <C-n> :call NumberToggle()<CR>
 "====end(通用 Keymap)===="
 
 "=============================================================================="
