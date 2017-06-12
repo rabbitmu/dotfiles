@@ -72,6 +72,10 @@ noremap L $
 noremap H 0
 " 跳到行首和行尾
 
+nnoremap <C-[> <<
+nnoremap <C-}> >>
+" 控制缩进
+
 noremap <silent><leader>/ :nohls<CR>
 " 关闭上次的搜索高亮
 
