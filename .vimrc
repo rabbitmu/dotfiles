@@ -79,11 +79,12 @@ nnoremap <C-}> >>
 noremap <silent><leader>/ :nohls<CR>
 " 关闭上次的搜索高亮
 
+nnoremap m ;
+" 搜索下一项
+
 vnoremap <leader>y "+y
 " 复制选区内容到系统剪贴板
 
-map <leader>m :!open http://man.bmbstack.com/vim
-" map <leader>w :!open https://wakatime.com/dashboard
 "打开man手册
 inoremap jj <esc> 
 " ESC
