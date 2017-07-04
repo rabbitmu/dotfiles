@@ -21,6 +21,7 @@ filetype on   " 开启文件类型侦测
 filetype plugin on   " 不同文件加载对应的插件
 set nocompatible " 关闭兼容∏模式
 set nu   " 显示行号
+set relativenumber " 显示相对行号
 set ruler " 显示光标当前位置
 set incsearch  " 开启实时搜索功能
 set ignorecase  " 搜索时大小写不敏感
@@ -49,7 +50,7 @@ set nowrap  "禁止折行
 set hls
 " 高亮TODO, FIXME
 if has('autocmd')
-    autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|XXX\|BUG\|HACK\)')
+    autocmd Syntax * call matchadd('Todo', '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|XXX\|BUG\|HACK\)')
 endif
 
 
