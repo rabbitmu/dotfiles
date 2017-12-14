@@ -210,7 +210,8 @@ Plug 'chemzqm/unite-js-func'  " 文件内函数跳转
 Plug 'tpope/vim-haml' " html补全
 Plug 'hail2u/vim-css3-syntax'
 Plug 'ternjs/tern_for_vim' " js补全
-Plug 'Valloric/MatchTagsAlways' " 标签提示
+" Plug 'Valloric/MatchTagsAlways' " 标签提示
+Plug 'name5566/vim-bookmark' " vim书签
 Plug 'vitalk/vim-simple-todo' " 修改todo状态
 " vimwiki无法使用plug安装，需手动创建
 
