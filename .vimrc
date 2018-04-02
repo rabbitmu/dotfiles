@@ -80,8 +80,10 @@ nnoremap <C-}> >>
 noremap <silent><leader>/ :nohls<CR>
 " 关闭上次的搜索高亮
 
-nnoremap m ;
+nnoremap , ;
 " 搜索下一项
+nnoremap < ,
+" 搜索上一项
 
 vnoremap <leader>y "+y
 " 复制选区内容到系统剪贴板
